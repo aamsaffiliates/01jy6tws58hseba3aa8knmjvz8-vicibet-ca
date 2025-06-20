@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicibet Casino Canada - Welcome Bonus 325% up to $4,500 + 300 Free Spins</title>
+    <meta name="description" content="Join Vicibet Casino Canada and claim your epic welcome package: 325% bonus up to $4,500 + 300 free spins + 1 Bonus Crab. Weekly cashback 15% up to $4,500. Play premium slots and table games.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Vicibet Casino Canada - Welcome Bonus 325% up to $4,500 + 300 Free Spins">
+    <meta property="og:description" content="Join Vicibet Casino Canada and claim your epic welcome package: 325% bonus up to $4,500 + 300 free spins + 1 Bonus Crab. Weekly cashback 15% up to $4,500.">
+    <meta property="og:image" content="/images/hero.webp">
+    <meta property="og:url" content="https://vicibet.ca">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --roman-red: #8B0000;
+            --roman-gold: #FFD700;
+            --roman-bronze: #CD7F32;
+            --roman-dark: #2C1810;
+            --roman-light: #F4E4BC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a0f0a 0%, #2c1810 50%, #1a0f0a 100%);
+            color: #f4e4bc;
+            overflow-x: hidden;
+        }
+        
+        .roman-font {
+            font-family: 'Cinzel', serif;
+        }
+        
+        /* Floating Elements Animation */
+        .floating-element {
+            position: absolute;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.7;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .floating-element:nth-child(2) { animation-delay: -2s; }
+        .floating-element:nth-child(3) { animation-delay: -4s; }
+        
+        /* Glow Effects */
+        .glow-text {
+            text-shadow: 0 0 10px var(--roman-gold), 0 0 20px var(--roman-gold), 0 0 30px var(--roman-gold);
+        }
+        
+        .glow-border {
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5), inset 0 0 20px rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--roman-gold);
+        }
+        
+        /* 3D Text Effect */
+        .text-3d {
+            text-shadow: 
+                1px 1px 0 #cd7f32,
+                2px 2px 0 #cd7f32,
+                3px 3px 0 #cd7f32,
+                4px 4px 0 #cd7f32,
+                5px 5px 0 #cd7f32,
+                6px 6px 10px rgba(0,0,0,0.8);
+        }
+        
+        /* Gradient Animations */
+        .gradient-animate {
+            background: linear-gradient(45deg, var(--roman-red), var(--roman-gold), var(--roman-red));
+            background-size: 300% 300%;
+            animation: gradientShift 3s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Button Animations */
+        .btn-glow {
+            background: linear-gradient(45deg, var(--roman-red), #a00000);
+            border: 2px solid var(--roman-gold);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-glow:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.6);
+        }
+        
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-glow:hover::before {
+            left: 100%;
+        }
+        
+        /* Card Hover Effects */
+        .game-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.3);
+        }
+        
+        .game-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(139, 0, 0, 0.8), rgba(255, 215, 0, 0.2));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .game-card:hover::after {
+            opacity: 1;
+        }
+        
+        /* Parallax Background */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Pulse Animation */
+        .pulse-glow {
+            animation: pulseGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulseGlow {
+            from { box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); }
+            to { box-shadow: 0 0 40px rgba(255, 215, 0, 0.8); }
+        }
+        
+        /* Spotlight Effect */
+        .spotlight {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .spotlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 70%);
+            animation: spotlight 8s linear infinite;
+        }
+        
+        @keyframes spotlight {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Entrance Animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .text-3d {
+                text-shadow: 
+                    1px 1px 0 #cd7f32,
+                    2px 2px 0 #cd7f32,
+                    3px 3px 5px rgba(0,0,0,0.8);
+            }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Navigation */
+        .nav-sticky {
+            backdrop-filter: blur(10px);
+            background: rgba(26, 15, 10, 0.9);
+            border-bottom: 1px solid var(--roman-gold);
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--roman-dark);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--roman-gold);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffed4e;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 nav-sticky">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="/">
+                        <img src="images/logo.webp" class="h-16">
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+                    <a href="#games" class="hover:text-yellow-400 transition-colors">Games</a>
+                    <a href="#bonuses" class="hover:text-yellow-400 transition-colors">Bonuses</a>
+                    <a href="#about" class="hover:text-yellow-400 transition-colors">About</a>
+                    <a href="#support" class="hover:text-yellow-400 transition-colors">Support</a>
+                </div>
+                <button onclick="window.location.href='/go'" class="btn-glow px-6 py-2 rounded-lg font-semibold">
+                    JOIN NOW
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center spotlight parallax-bg" style="background-image: linear-gradient(rgba(26,15,10,0.7), rgba(26,15,10,0.7)), url('images/hero.webp');">
+        <!-- Floating Elements -->
+        <div class="floating-element top-20 left-10 text-4xl text-yellow-400">
+            ⚱️
+        </div>
+        <div class="floating-element top-32 right-20 text-3xl text-red-600">
+            🌿
+        </div>
+        <div class="floating-element bottom-40 left-20 text-3xl text-yellow-400">
+            🐪
+        </div>
+        <div class="floating-element top-40 right-10 text-2xl text-red-600">
+            ⚔️
+        </div>
+        <div class="floating-element bottom-32 right-32 text-3xl text-yellow-400">
+            ⚚
+        </div>
+        
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="fade-in-up">
+                <h1 class="text-4xl md:text-7xl font-bold roman-font text-3d glow-text mb-6">
+                    VICIBET CASINO<br>
+                    <span class="text-yellow-400">GLADIATOR'S FORTUNE</span>
+                </h1>
+                
+                <!-- Bonus Display Box -->
+                <div class="glow-border bg-gradient-to-r from-red-900/50 to-yellow-900/50 p-6 rounded-lg mb-8 max-w-2xl mx-auto">
+                    <div class="text-2xl md:text-3xl font-bold mb-2 gradient-animate bg-clip-text text-transparent">
+                        WELCOME PACKAGE
+                    </div>
+                    <div class="text-xl md:text-2xl font-semibold text-yellow-400 mb-2">
+                        325% UP TO CA$4,500
+                    </div>
+                    <div class="text-lg">
+                        + 300 FREE SPINS + 1 BONUS CRAB
+                    </div>
+                    <div class="text-sm mt-2 text-gray-300">
+                        Weekly Cashback 15% up to CA$4,500
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="window.location.href='/go'" class="btn-glow px-8 py-4 rounded-lg text-xl font-bold">
+                        <i class="fas fa-play mr-2"></i>CLAIM BONUS
+                    </button>
+                    <button onclick="window.location.href='/go'" class="border-2 border-yellow-400 px-8 py-4 rounded-lg text-xl font-bold hover:bg-yellow-400 hover:text-black transition-all">
+                        <i class="fas fa-gamepad mr-2"></i>PLAY NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-16 bg-gradient-to-b from-red-900/20 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                HOW TO CLAIM YOUR BONUS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center fade-in-up">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-600 rounded-full flex items-center justify-center pulse-glow">
+                        <i class="fas fa-user-plus text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">1. REGISTER</h3>
+                    <p class="text-gray-300">Create your gladiator account in under 2 minutes</p>
+                </div>
+                <div class="text-center fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-600 rounded-full flex items-center justify-center pulse-glow">
+                        <i class="fas fa-credit-card text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">2. DEPOSIT</h3>
+                    <p class="text-gray-300">Make your first deposit of CA$20 or more</p>
+                </div>
+                <div class="text-center fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-600 rounded-full flex items-center justify-center pulse-glow">
+                        <i class="fas fa-gift text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">3. ACTIVATE</h3>
+                    <p class="text-gray-300">Bonus automatically credited to your account</p>
+                </div>
+                <div class="text-center fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-600 rounded-full flex items-center justify-center pulse-glow">
+                        <i class="fas fa-trophy text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">4. CONQUER</h3>
+                    <p class="text-gray-300">Start playing and winning like a true gladiator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="games" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                GLADIATOR'S CHOICE GAMES
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/book_of_dead.webp" alt="Book of Dead" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">Book of Dead</h3>
+                    </div>
+                </div>
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/ripcity.webp" alt="RipCity" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">RipCity</h3>
+                    </div>
+                </div>
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/lebandit.webp" alt="Le Bandit" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">Le Bandit</h3>
+                    </div>
+                </div>
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/stormforget.webp" alt="Stormforget" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">Stormforget</h3>
+                    </div>
+                </div>
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/sugar_rush1000.webp" alt="Sugar Rush 1000" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">Sugar Rush 1000</h3>
+                    </div>
+                </div>
+                <div class="game-card bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="/images/zezeus.webp" alt="Ze Zeus" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-center">Ze Zeus</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gradient-to-b from-transparent to-red-900/20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                ABOUT VICIBET CASINO
+            </h2>
+            <div class="max-w-4xl mx-auto text-lg leading-relaxed">
+                <p class="mb-6">
+                    Vicibet Casino stands as Canada's premier online gaming destination, where the spirit of ancient Roman gladiators meets modern casino excellence. Established with a vision to provide Canadian players with an unparalleled gaming experience, Vicibet combines the thrill of the colosseum with cutting-edge technology and fair play principles.
+                </p>
+                <p class="mb-6">
+                    The platform features an extensive collection of over 2,500 premium games from the industry's leading software providers. Players can immerse themselves in a diverse selection of slot machines, table games, live dealer experiences, and specialty games, all designed to deliver maximum entertainment and winning potential. Each game undergoes rigorous testing to ensure fairness and reliability.
+                </p>
+                <p class="mb-6">
+                    Vicibet Casino operates under strict regulatory compliance, holding valid gaming licenses that guarantee player protection and responsible gaming practices. The platform employs advanced SSL encryption technology to safeguard all financial transactions and personal information, creating a secure environment where players can focus on enjoying their favorite games.
+                </p>
+                <p class="mb-6">
+                    The casino's commitment to excellence extends beyond gaming, offering 24/7 multilingual customer support, fast withdrawal processing, and a comprehensive VIP program that rewards loyal players with exclusive benefits. Canadian players particularly appreciate the platform's support for local payment methods and CAD currency, making deposits and withdrawals seamless and convenient.
+                </p>
+                <p>
+                    With regular promotions, tournaments, and special events, Vicibet Casino ensures that every visit brings new opportunities for excitement and rewards. The platform's mobile-optimized design allows players to enjoy their favorite games anywhere, anytime, maintaining the same high-quality experience across all devices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                GAME PROVIDERS
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">NetEnt</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Microgaming</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Play'n GO</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Pragmatic Play</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Evolution Gaming</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Red Tiger</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Yggdrasil</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Quickspin</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Big Time Gaming</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Thunderkick</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Push Gaming</span>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg text-center hover:bg-red-900/30 transition-colors">
+                    <span class="font-semibold">Nolimit City</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-16 bg-gradient-to-b from-red-900/20 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                PAYMENT METHODS
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-yellow-400">Deposit Methods</h3>
+                        <table class="w-full text-sm">
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Interac e-Transfer</td>
+                                <td class="py-2 text-right">Instant</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Visa/Mastercard</td>
+                                <td class="py-2 text-right">Instant</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Bitcoin</td>
+                                <td class="py-2 text-right">15 mins</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Ethereum</td>
+                                <td class="py-2 text-right">15 mins</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Litecoin</td>
+                                <td class="py-2 text-right">10 mins</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4 text-yellow-400">Withdrawal Methods</h3>
+                        <table class="w-full text-sm">
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Interac e-Transfer</td>
+                                <td class="py-2 text-right">1-3 days</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Bank Transfer</td>
+                                <td class="py-2 text-right">3-5 days</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Bitcoin</td>
+                                <td class="py-2 text-right">1-2 hours</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="py-2">Ethereum</td>
+                                <td class="py-2 text-right">1-2 hours</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">Litecoin</td>
+                                <td class="py-2 text-right">30 mins</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-lg leading-relaxed">
+                    <p class="mb-4">
+                        Vicibet Casino prioritizes secure and convenient banking for Canadian players, offering a comprehensive selection of trusted payment methods tailored to local preferences. The platform supports Interac e-Transfer, Canada's most popular online payment method, enabling instant deposits and reliable withdrawals directly from Canadian bank accounts.
+                    </p>
+                    <p class="mb-4">
+                        Traditional payment options include major credit and debit cards (Visa, Mastercard), providing familiar and secure transaction methods. For tech-savvy players, Vicibet embraces cryptocurrency payments, accepting Bitcoin, Ethereum, and Litecoin for enhanced privacy and faster processing times.
+                    </p>
+                    <p>
+                        All transactions are protected by advanced encryption technology and undergo strict verification processes to prevent fraud. The casino maintains transparent fee structures with no hidden charges, and most deposits are processed instantly, allowing players to start gaming immediately. Withdrawal requests are typically processed within 24 hours, with funds reaching players' accounts according to the selected method's standard timeframes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold roman-font glow-text mb-8">
+                        SECURITY FEATURES
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-shield-alt text-2xl text-yellow-400"></i>
+                            <span>256-bit SSL Encryption</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-lock text-2xl text-yellow-400"></i>
+                            <span>Two-Factor Authentication</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-user-shield text-2xl text-yellow-400"></i>
+                            <span>Identity Verification</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-eye text-2xl text-yellow-400"></i>
+                            <span>24/7 Fraud Monitoring</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-certificate text-2xl text-yellow-400"></i>
+                            <span>Licensed & Regulated</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold roman-font glow-text mb-8">
+                        VIP PROGRAM LEVELS
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-yellow-400">Bronze Gladiator</span>
+                                <i class="fas fa-medal text-yellow-600"></i>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-gray-300">Silver Centurion</span>
+                                <i class="fas fa-medal text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-yellow-400">Gold Praetor</span>
+                                <i class="fas fa-medal text-yellow-500"></i>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-purple-400">Diamond Caesar</span>
+                                <i class="fas fa-crown text-purple-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-lg leading-relaxed">
+                <p class="mb-4">
+                    Vicibet Casino's VIP program transforms loyal players into gaming royalty through a comprehensive tier-based system that rewards dedication and gameplay. The program features four distinct levels, each offering increasingly valuable benefits and exclusive privileges designed to enhance the gaming experience.
+                </p>
+                <p class="mb-4">
+                    Bronze Gladiators enjoy priority customer support and weekly cashback bonuses, while Silver Centurions receive enhanced withdrawal limits and birthday bonuses. Gold Praetors access exclusive tournaments and personalized account management, with Diamond Caesars enjoying the ultimate VIP treatment including luxury gifts, private events, and maximum cashback rates.
+                </p>
+                <p>
+                    Progression through VIP levels is based on accumulated loyalty points earned through real-money gameplay. Each level unlocks additional perks such as faster withdrawals, higher betting limits, exclusive game access, and invitations to special events. The program ensures that dedicated players receive recognition and rewards proportional to their loyalty and gaming activity.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-16 bg-gradient-to-b from-transparent to-red-900/20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                BONUSES & PROMOTIONS
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="text-lg leading-relaxed mb-8">
+                    <p class="mb-6">
+                        Vicibet Casino's bonus structure represents one of the most generous offerings in the Canadian online gaming market, designed to maximize player value from the first deposit through ongoing gameplay. The welcome package serves as the cornerstone of the casino's promotional strategy, providing new players with substantial bonus funds and free spins to explore the extensive game library.
+                    </p>
+                    <p class="mb-6">
+                        The flagship welcome bonus delivers a remarkable 325% match on the first deposit, effectively quadrupling players' initial bankrolls up to a maximum of CA$4,500. This industry-leading percentage ensures that players receive maximum value for their money, allowing extended gameplay sessions and increased winning opportunities across the platform's premium game selection.
+                    </p>
+                    <p class="mb-6">
+                        Complementing the deposit bonus, players receive 300 free spins distributed across popular slot titles, providing risk-free opportunities to experience high-quality games and potentially generate real money winnings. The inclusion of the exclusive Bonus Crab feature adds a unique gamification element, offering additional rewards and interactive gameplay experiences not found at competing casinos.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Bonus Terms & Conditions</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Minimum deposit: CA$20</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Wagering requirement: 35x bonus amount</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Free spins valid for 7 days</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Maximum bet with bonus: CA$5</li>
+                        <li><i class="fas fa-check text-green-400 mr-2"></i>Bonus expires after 30 days</li>
+                    </ul>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-gray-800 rounded-lg overflow-hidden">
+                        <thead class="bg-red-900">
+                            <tr>
+                                <th class="p-4 text-left">Promotion Type</th>
+                                <th class="p-4 text-left">Bonus Amount</th>
+                                <th class="p-4 text-left">Frequency</th>
+                                <th class="p-4 text-left">Wagering</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4">Welcome Package</td>
+                                <td class="p-4">325% up to CA$4,500</td>
+                                <td class="p-4">One-time</td>
+                                <td class="p-4">35x</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4">Weekly Cashback</td>
+                                <td class="p-4">15% up to CA$4,500</td>
+                                <td class="p-4">Weekly</td>
+                                <td class="p-4">No wagering</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4">Reload Bonus</td>
+                                <td class="p-4">50% up to CA$1,000</td>
+                                <td class="p-4">Monthly</td>
+                                <td class="p-4">30x</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">Free Spin Friday</td>
+                                <td class="p-4">50-200 Free Spins</td>
+                                <td class="p-4">Weekly</td>
+                                <td class="p-4">25x winnings</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                CUSTOMER SUPPORT
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-comments text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Live Chat</h3>
+                    <p class="text-gray-300 mb-4">24/7 instant support</p>
+                    <button onclick="window.location.href='/go'" class="btn-glow px-6 py-2 rounded-lg">
+                        Start Chat
+                    </button>
+                </div>
+                <div class="text-center bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-envelope text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Email Support</h3>
+                    <p class="text-gray-300 mb-4">support@vicibet.ca</p>
+                    <p class="text-sm text-gray-400">Response within 2 hours</p>
+                </div>
+                <div class="text-center bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-phone text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Phone Support</h3>
+                    <p class="text-gray-300 mb-4">1-800-VICIBET</p>
+                    <p class="text-sm text-gray-400">Available 24/7</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-16 bg-gradient-to-b from-red-900/20 to-transparent">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                OTHER PROMOTIONS
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Tournament Tuesdays</h3>
+                    <p class="text-gray-300 mb-4">Compete against other gladiators in weekly slot tournaments with CA$10,000 prize pools.</p>
+                    <ul class="text-sm text-gray-400">
+                        <li>• Entry fee: CA$25</li>
+                        <li>• Duration: 24 hours</li>
+                        <li>• Top 50 players win prizes</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Midweek Madness</h3>
+                    <p class="text-gray-300 mb-4">Every Wednesday, receive 25% cashback on all losses from the previous day.</p>
+                    <ul class="text-sm text-gray-400">
+                        <li>• Maximum cashback: CA$500</li>
+                        <li>• No wagering requirements</li>
+                        <li>• Credited automatically</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-yellow-400">Weekend Warriors</h3>
+                    <p class="text-gray-300 mb-4">Double loyalty points on all games during weekends plus exclusive game releases.</p>
+                    <ul class="text-sm text-gray-400">
+                        <li>• Friday 6PM - Sunday 11:59PM</li>
+                        <li>• All games included</li>
+                        <li>• Early access to new slots</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Feature - Bonus Crab -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold roman-font glow-text mb-8">
+                    BONUS CRAB FEATURE
+                </h2>
+                <div class="bg-gradient-to-r from-red-900/50 to-yellow-900/50 p-8 rounded-lg glow-border">
+                    <img src="images/bonnus-crab.webp" alt="Bonus Crab" class="h-64 mx-auto mb-6 rounded-3xl">
+                    <h3 class="text-2xl font-bold mb-4 text-yellow-400">Exclusive Vicibet Feature</h3>
+                    <p class="text-lg mb-6">
+                        The Bonus Crab is Vicibet's signature feature that randomly appears during gameplay to award instant prizes, multipliers, and special bonuses. This unique gamification element adds an extra layer of excitement to every spin and bet.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <i class="fas fa-coins text-2xl text-yellow-400 mb-2"></i>
+                            <p>Instant Cash Prizes</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <i class="fas fa-times text-2xl text-yellow-400 mb-2"></i>
+                            <p>Win Multipliers</p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <i class="fas fa-gift text-2xl text-yellow-400 mb-2"></i>
+                            <p>Free Spin Bonuses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-16 bg-gradient-to-b from-transparent to-red-900/20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                TRUST & LICENSING
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-certificate text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">Licensed</h3>
+                    <p class="text-sm text-gray-400">Gaming Authority</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-shield-alt text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">SSL Secured</h3>
+                    <p class="text-sm text-gray-400">256-bit Encryption</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-random text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">Fair Gaming</h3>
+                    <p class="text-sm text-gray-400">RNG Certified</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <i class="fas fa-user-shield text-4xl text-yellow-400 mb-4"></i>
+                    <h3 class="font-bold">Responsible</h3>
+                    <p class="text-sm text-gray-400">Gaming Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-center roman-font glow-text mb-12">
+                FREQUENTLY ASKED QUESTIONS
+            </h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">How do I claim the welcome bonus?</h3>
+                    <p class="text-gray-300">Simply register a new account, make your first deposit of CA$20 or more, and the bonus will be automatically credited to your account along with the free spins and Bonus Crab feature.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">What are the wagering requirements?</h3>
+                    <p class="text-gray-300">The welcome bonus has a 35x wagering requirement on the bonus amount. Free spin winnings must be wagered 25x before withdrawal. Cashback bonuses have no wagering requirements.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">How long do withdrawals take?</h3>
+                    <p class="text-gray-300">Withdrawal processing times vary by method: Interac e-Transfer (1-3 days), Bank Transfer (3-5 days), Cryptocurrencies (30 minutes to 2 hours). All requests are processed within 24 hours.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-3 text-yellow-400">Is Vicibet Casino legal in Canada?</h3>
+                    <p class="text-gray-300">Yes, Vicibet Casino operates under valid gaming licenses and complies with Canadian gambling regulations. The platform is fully legal for Canadian residents aged 19+ (18+ in Alberta, Manitoba, and Quebec).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-yellow-400">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="/">
+                        <img src="images/logo.webp" class="h-16 mb-4">
+                    </a>
+                    <p class="text-gray-400 text-sm">
+                        Canada's premier online casino experience with Roman Empire grandeur.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-yellow-400">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#games" class="hover:text-yellow-400">Games</a></li>
+                        <li><a href="#bonuses" class="hover:text-yellow-400">Bonuses</a></li>
+                        <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                        <li><a href="#support" class="hover:text-yellow-400">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-yellow-400">Responsible Gaming</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-exclamation-triangle text-yellow-400"></i>
+                            <span>18+ Only</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-clock text-yellow-400"></i>
+                            <span>Set Time Limits</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-phone text-yellow-400"></i>
+                            <span>1-866-531-2600</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-globe text-yellow-400"></i>
+                            <span>problemgambling.ca</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4 text-yellow-400">Contact</h4>
+                    <div class="space-y-2 text-sm text-gray-400">
+                        <p>support@vicibet.ca</p>
+                        <p>1-800-VICIBET</p>
+                        <p>24/7 Live Chat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p class="mb-4">
+                    <strong>Disclaimer:</strong> Wagering requirements apply to all bonuses. Players must be 19+ (18+ in AB, MB, QC). 
+                    Terms and conditions apply. Please gamble responsibly.
+                </p>
+                <p>&copy; 2024 Vicibet Casino. All rights reserved. Licensed and regulated.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('backdrop-blur-lg');
+            } else {
+                nav.classList.remove('backdrop-blur-lg');
+            }
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
