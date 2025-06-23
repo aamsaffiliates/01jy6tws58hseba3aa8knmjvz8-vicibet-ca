@@ -1,0 +1,104 @@
+/* Additional styles specific to withdrawals page */
+.withdrawal-step {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.1), rgba(255, 215, 0, 0.05));
+  border-left: 4px solid var(--roman-gold);
+  transition: all 0.3s ease;
+}
+
+.withdrawal-step:hover {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.2), rgba(255, 215, 0, 0.1));
+  transform: translateX(5px);
+}
+
+.method-card {
+  background: linear-gradient(135deg, rgba(44, 24, 16, 0.8), rgba(26, 15, 10, 0.9));
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.method-card:hover {
+  border-color: var(--roman-gold);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+}
+
+.processing-time {
+  background: linear-gradient(45deg, var(--roman-red), #a00000);
+  color: var(--roman-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.processing-time.fast {
+  background: linear-gradient(45deg, #059669, #10b981);
+}
+
+.limit-badge {
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid var(--roman-gold);
+  color: var(--roman-gold);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.featured-method {
+  border: 2px solid var(--roman-gold);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.warning-box {
+  background: linear-gradient(135deg, rgba(139, 0, 0, 0.2), rgba(205, 127, 50, 0.1));
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.success-box {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.2), rgba(16, 185, 129, 0.1));
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.info-box {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(99, 102, 241, 0.1));
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Table enhancements */
+.withdrawal-table {
+  background: rgba(31, 41, 55, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.withdrawal-table tr:hover {
+  background: rgba(139, 0, 0, 0.1);
+}
+
+.withdrawal-table .fast-row {
+  background: rgba(5, 150, 105, 0.1);
+}
+
+/* Navigation breadcrumb */
+.breadcrumb {
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.breadcrumb a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: var(--roman-gold);
+}
+
+.breadcrumb .current {
+  color: var(--roman-gold);
+}
